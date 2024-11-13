@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #94FCFE;
+  }
+  
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr; 
+    gap: 20px;
+    width: 80%; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c1ead7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+  }
+  
+  /* Header */
+  .header,
+  h1 {
+    font-size: 32px;
+    text-align: center; /* Centrar el título */
+    padding: 10px;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 15px;
+    width: 85px;
+    height: auto;
+  }
+  
+  
+  .filters {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .filters select,
+  .filters button {
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  
+  .productos-list {
+    grid-column: 1 / 2;
+    overflow-y: auto;
+    max-height: 500px;
+    padding-right: 10px;
+  }
+  
+  .producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .producto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    margin: 5px 0;
+  }
+  .productos-list-container {
+    height: 450px; 
+    overflow-y: auto;
+  }
+  
+  .detalle-producto {
+    grid-column: 3 / 4;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    max-width: 300px;
+  }
+  
+  .detalle-producto h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  
+  .detalle-producto img {
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .detalle-producto p,
+  .detalle-producto label {
+    margin: 8px 0;
+    font-size: 0.9em;
+  }
+  
+  
+  button {
+    background-color: #FFB122;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #FFB122;
+  }
+  
+  
+  nav {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  nav button {
+    margin: 0 10px;
+  }
+  
+ 
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  

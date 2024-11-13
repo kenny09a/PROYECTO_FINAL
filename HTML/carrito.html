@@ -1,0 +1,98 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/PROYECTO_FINAL/CSS/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <img
+          src="https://i.ibb.co/Vx50D6D/logo-de-una-tienda-de-zapatos-llamada-Ken-Shoes.jpg"
+          alt="Logo de la tienda"
+          class="logo"
+        />
+        <h1>Carrito de Compras</h1>
+      </header>
+
+      <section class="compra-actual">
+        <h2>Productos en el Carrito</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Código</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="carritoTabla"></tbody>
+        </table>
+      </section>
+
+      <section class="resumen-compra">
+        <h2>Resumen de la Compra</h2>
+        <p>Total de productos: <span id="totalProductos"></span></p>
+        <p>Total de la compra: $<span id="totalCompra"></span></p>
+        <p>
+          Cargo por domicilio: $15,000 (aplicado si se selecciona entrega a
+          domicilio)
+        </p>
+        <p>Total Final: $<span id="totalFinal"></span></p>
+      </section>
+
+      <nav class="navegacion">
+        <button id="continuarComprando">Continuar Comprando</button>
+        <button id="cancelarCompra">Cancelar Compra</button>
+      </nav>
+
+      <section class="pago">
+        <h2>Información de Tarjeta de Crédito</h2>
+
+        <form id="tarjetaForm">
+          <label for="numeroTarjeta">Número de Tarjeta:</label>
+          <input
+            type="text"
+            id="numeroTarjeta"
+            maxlength="16"
+            placeholder="16 dígitos"
+            required
+          />
+
+          <label for="fechaExpiracion">Fecha de Expiración (MM/AA):</label>
+          <input
+            type="text"
+            id="fechaExpiracion"
+            maxlength="5"
+            placeholder="MM/AA"
+            required
+          />
+
+          <label for="codigoSeguridad">Código de Seguridad:</label>
+          <input
+            type="password"
+            id="codigoSeguridad"
+            maxlength="3"
+            placeholder="3 dígitos"
+            required
+          />
+
+          <label for="nombreTitular">Nombre del Titular:</label>
+          <input type="text" id="nombreTitular" required />
+
+          <button type="submit" id="ejecutarCompra">Ejecutar Compra</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2024 Tienda de Tenis & Zapatos KENshoes</p>
+      <p>Contacto: karenteria@estudiante.uniajc.edu.co | Tel: 313 7067 898</p>
+    </footer>
+
+    <script src="/PROYECTO_FINAL/JS/carrito.js"></script>
+  </body>
+</html>

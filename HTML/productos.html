@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vista de Productos</title>
+    <link rel="stylesheet" href="/PROYECTO_FINAL/CSS/productos.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <img
+          src="https://i.ibb.co/Vx50D6D/logo-de-una-tienda-de-zapatos-llamada-Ken-Shoes.jpg"
+          alt="Logo de la tienda"
+          class="logo"
+        />
+        <h1>Productos Disponibles</h1>
+      </header>
+
+      <!-- Filtros -->
+      <section class="filters">
+        <h2>Filtros</h2>
+        <label for="filtroMarca">Filtrar por marca:</label>
+        <select id="filtroMarca">
+          <option value="todos">Todas las marcas</option>
+          <option value="Nike">Nike</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Adidas">Adidas</option>
+          <option value="Fila">Fila</option>
+        </select>
+
+        <label for="filtroPrecio">Filtrar por precio:</label>
+        <select id="filtroPrecio">
+          <option value="todos">Todos los precios</option>
+          <option value="80000-150000">80,000 - 150,000</option>
+          <option value="160000-250000">160,000 - 250,000</option>
+          <option value="260000-350000">260,000 - 350,000</option>
+        </select>
+
+        <button id="filtrar">Filtrar</button>
+        <button id="limpiarFiltros">Limpiar Filtros</button>
+      </section>
+
+      <section class="productos-list-container">
+        <div class="productos-list"></div>
+      </section>
+
+      <aside class="detalle-producto">
+        <h2>Detalle del Producto</h2>
+        <img
+          id="productoImagen"
+          alt="Imagen del producto"
+          src=""
+          style="width: 150px"
+        />
+        <p>Nombre: <span id="productoNombre"></span></p>
+        <p>Marca: <span id="productoMarca"></span></p>
+        <p>Precio: <span id="productoPrecio"></span></p>
+        <p>Disponibilidad: <span id="productoDisponibilidad"></span></p>
+        <p>Cantidad disponible: <span id="productoStock"></span></p>
+        <p>Código: <span id="productoCodigo"></span></p>
+
+        <label for="cantidadProducto">Cantidad:</label>
+        <input type="number" id="cantidadProducto" min="1" value="1" />
+        <button id="agregarCarrito">Añadir al Carrito</button>
+      </aside>
+
+      <nav>
+        <button id="cancelarCompra">Cancelar Compra</button>
+        <button id="completarCompra">Completar Compra</button>
+      </nav>
+    </main>
+    <footer class="footer">
+      <p>© 2024 Tienda de Tenis & Zapatos KENshoes</p>
+      <p>Contacto: karenteria@estudiante.uniajc.edu.co | Tel: 313 7067 898</p>
+    </footer>
+
+    <script src="/PROYECTO_FINAL/JS/productos.js"></script>
+  </body>
+</html>

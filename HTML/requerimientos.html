@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Requerimientos de Compra</title>
+    <link rel="stylesheet" href="/PROYECTO_FINAL/CSS/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://i.ibb.co/Vx50D6D/logo-de-una-tienda-de-zapatos-llamada-Ken-Shoes.jpg"
+        alt="Logo de la tienda"
+        class="logo"
+      />
+      <h1>Requerimientos de Compra</h1>
+    </header>
+
+    <main class="container">
+      <section>
+        <form id="requerimientosForm">
+          <fieldset>
+            <legend>Detalles del Comprador</legend>
+
+            <label for="nombre">Nombre del Comprador:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              maxlength="20"
+              required
+            />
+
+            <label for="presupuesto">Presupuesto Máximo (COP):</label>
+            <input
+              type="number"
+              id="presupuesto"
+              name="presupuesto"
+              min="1"
+              required
+            />
+
+            <label for="cantidad">Cantidad de Artículos Máxima:</label>
+            <input
+              type="number"
+              id="cantidad"
+              name="cantidad"
+              min="1"
+              max="20"
+              required
+            />
+
+            <label for="direccion">Dirección de Envío:</label>
+            <input type="text" id="direccion" name="direccion" required />
+
+            <fieldset>
+              <legend>Tipo de Entrega</legend>
+              <input
+                type="radio"
+                id="domicilio"
+                name="entrega"
+                value="domicilio"
+                required
+              />
+              <label for="domicilio">Domicilio</label>
+              <input type="radio" id="recoger" name="entrega" value="recoger" />
+              <label for="recoger">Recoger en Tienda</label>
+            </fieldset>
+          </fieldset>
+          <nav>
+            <button type="submit">Iniciar Compra</button>
+          </nav>
+          <div>
+            <button type="reset">Limpiar Campos</button>
+          </div>
+          <div id="error-mensaje" class="error-mensaje"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Tienda de Tenis & Zapatos KENshoes</p>
+      <p>Contacto: karenteria@estudiante.uniajc.edu.co | Tel: 313 7067 898</p>
+    </footer>
+    <script src="/PROYECTO_FINAL/JS/requerimientos.js"></script>
+  </body>
+</html>
